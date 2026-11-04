@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacak Pengiriman | Ruang Baca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="tracking">
+
+    <main>
+        <div class="page-heading">
+            <div>
+                <p class="eyebrow">DARI RAK KE TANGANMU</p>
+                <h1>Ikuti perjalanan bukumu.</h1>
+                <p class="muted">
+                    Masukkan nomor Delivery Order untuk melihat kabar paketmu.
+                </p>
+            </div>
+        </div>
+
+        <section class="tracking-search panel">
+            <div class="tracking-icon">↗</div>
+
+            <h2>Di mana pesanan saya?</h2>
+
+            <p class="muted">
+                Setiap perjalanan punya cerita. Ini cerita paketmu.
+            </p>
+
+            <form id="tracking-form" class="tracking-form">
+                <label class="sr-only" for="do-number">
+                    Nomor Delivery Order
+                </label>
+
+                <input id="do-number" placeholder="Masukkan nomor DO" maxlength="60" required>
+
+                <button type="submit" class="button">
+                    Cari paket →
+                </button>
+            </form>
+
+            <p class="small muted">
+                Coba nomor dari data:
+
+                <button class="inline-button" data-do="20230012">
+                    20230012
+                </button>
+
+                atau
+
+                <button class="inline-button" data-do="20230013">
+                    20230013
+                </button>
+            </p>
+        </section>
+
+        <section id="tracking-result" aria-live="polite"></section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Ruang Baca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="login">
+
+    <main class="login-layout">
+        <section class="login-story">
+            <a class="brand" href="login.html">
+                <span class="brand-icon">▤</span>
+                <span>ruang<span class="brand-light">baca</span></span>
+            </a>
+
+            <div>
+                <p class="eyebrow">HALAMAN BARU DIMULAI DI SINI</p>
+
+                <h1>
+                    Ide besar dimulai<br>
+                    dari satu halaman.
+                </h1>
+
+                <p>
+                    Temukan buku, perluas sudut pandang,<br>
+                    dan beri ruang untuk dirimu bertumbuh.
+                </p>
+            </div>
+
+            <div class="login-books">
+                <img src="img/pengantar_komunikasi.jpg" alt="Pengantar Ilmu Komunikasi">
+                <img src="img/kepemimpinan.jpg" alt="Kepemimpinan">
+                <img src="img/mikrobiologi.jpg" alt="Mikrobiologi Dasar">
+            </div>
+
+            <span class="small">BACA. PAHAMI. BERTUMBUH.</span>
+        </section>
+
+        <section class="login-form-wrap">
+            <div class="login-form">
+                <span class="tag">SELAMAT DATANG KEMBALI</span>
+
+                <h2>
+                    Senang bertemu<br>
+                    denganmu lagi.
+                </h2>
+
+                <p class="muted">
+                    Masuk dan temukan bacaan berikutnya.
+                </p>
+
+                <form id="login-form">
+                    <label>
+                        Email
+                        <input name="email" type="email" placeholder="Masukkan email kamu" autocomplete="username"
+                            required>
+                    </label>
+
+                    <label>
+                        Password
+                        <span class="password-field">
+                            <input id="password" name="password" type="password" placeholder="Masukkan password"
+                                autocomplete="current-password" required>
+                            <button type="button" id="toggle-password" aria-label="Tampilkan password">
+                                Lihat
+                            </button>
+                        </span>
+                    </label>
+
+                    <div class="login-options">
+                        <span class="small muted">Akun simulasi tugas UTS</span>
+
+                        <button type="button" class="inline-button" id="forgot">
+                            Lupa password?
+                        </button>
+                    </div>
+
+                    <button type="submit" class="button wide">
+                        Masuk ke Ruang Baca →
+                    </button>
+                </form>
+
+                <p class="signup-line">
+                    Belum punya akun?
+                    <button class="inline-button" id="register">
+                        Daftar sekarang
+                    </button>
+                </p>
+
+                <details class="demo-details">
+                    <summary>Akun contoh untuk mencoba</summary>
+                    <p>
+                        Email: <strong>rina@gmail.com</strong><br>
+                        Password: <strong>rina123</strong>
+                    </p>
+                    <button class="inline-button" id="fill-demo">
+                        Gunakan akun contoh →
+                    </button>
+                </details>
+
+                <p class="login-footer">
+                    Belajar hal baru, setiap hari. ✧
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

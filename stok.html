@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Buku | Ruang Baca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="stok">
+
+    <main>
+        <div class="page-heading">
+            <div>
+                <p class="eyebrow">TEMUKAN INSPIRASI</p>
+                <h1>Rak penuh kemungkinan.</h1>
+                <p class="muted">
+                    Buku ajar pilihan, bekal untuk perjalanan belajarmu.
+                </p>
+            </div>
+
+            <button class="button" id="add-stock">
+                + Tambah stok baru
+            </button>
+        </div>
+
+        <section class="catalog-tools">
+            <label class="search-box">
+                <span aria-hidden="true">⌕</span>
+
+                <input id="search" type="search" placeholder="Cari judul atau kode buku..." aria-label="Cari buku">
+            </label>
+
+            <label class="sort-label">
+                Urutkan
+
+                <select id="sort">
+                    <option value="default">Pilihan koleksi</option>
+                    <option value="name">Judul A–Z</option>
+                    <option value="low">Harga terendah</option>
+                    <option value="high">Harga tertinggi</option>
+                </select>
+            </label>
+
+            <div class="view-switch">
+                <button id="grid-view" class="selected" aria-label="Tampilan kartu" aria-pressed="true">
+                    ▦
+                </button>
+
+                <button id="table-view" aria-label="Tampilan tabel" aria-pressed="false">
+                    ☷
+                </button>
+            </div>
+        </section>
+
+        <div class="section-title">
+            <span id="book-count" class="muted"></span>
+            <span class="tag">Buku Ajar</span>
+        </div>
+
+        <section id="catalog" class="books catalog"></section>
+
+        <p class="small muted">
+            Stok diperbarui setelah pemesanan simulasi.
+        </p>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
